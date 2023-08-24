@@ -6,15 +6,17 @@ import Home from './components/Home';
 import Header from './components/Header';
 function App() {
   return (
-    <Sidebar>
+    
     <BrowserRouter>
+    <Sidebar>
     <Header/>
     <Routes>
-    <Route path="/" element={<Home/>}/>
+    <Route  path="/" element={<Home/>}/>
 
     </Routes>
-    </BrowserRouter>
     </Sidebar>
+    </BrowserRouter>
+    
   );
 }
 
