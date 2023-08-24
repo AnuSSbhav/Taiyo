@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Graphs from './components/Graph';
 import Header from './components/Header';
 import { QueryClient,QueryClientProvider } from '@tanstack/react-query';
+import Dashboard from './components/Dashboard';
 function App() {
   const queryClient = new QueryClient()
   return (
@@ -15,7 +16,7 @@ function App() {
     <Header/>
     <Routes>
     <Route  path="/" element={<Home/>}/>
-    <Route  path="/graphs" element={<Graphs/>}/>
+    <Route  path="/graphs" element={<Dashboard/>}/>
     </Routes>
     </Sidebar>
     </BrowserRouter>
