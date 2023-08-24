@@ -6,7 +6,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import Loader from '../loader';
 const Mapped = () => {
-
+ 
     const customIcon = L.icon({
         iconUrl: './location.png', // Replace with your image path
         iconSize: [32, 32], // Adjust the size as needed
