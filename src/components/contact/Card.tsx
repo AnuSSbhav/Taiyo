@@ -1,7 +1,7 @@
 import React, { useState, FC } from 'react';
-import { useAppDispatch } from '../store/hooks';
-import { removeItem } from '../store/counterSlice';
-import { CounterState } from '../utils';
+import { useAppDispatch } from '../../store/hooks';
+import { removeItem } from '../../store/counterSlice';
+import { CounterState } from '../../utils';
 
 
 interface CardProps {

@@ -1,7 +1,7 @@
 import React,{useEffect,useState,FC} from 'react'
-import { useAppDispatch } from '../store/hooks'
-import { add,editItem} from '../store/counterSlice';
-import { CounterState } from '../utils';
+import { useAppDispatch } from '../../store/hooks'
+import { add,editItem} from '../../store/counterSlice';
+import { CounterState } from '../../utils';
 type formData={
 firstName:string;
 lastName:string;
