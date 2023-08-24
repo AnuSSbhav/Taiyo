@@ -11,10 +11,11 @@ interface SidebarProps {
   const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   return (
     <div className='flex'>
-      <div className='fixed w-20 h-screen p-4 bg-white border-r-[1px] flex flex-col justify-between'>
+      <div className='fixed w-20 h-screen p-4 bg-slate-400 border-r-[1px] flex flex-col justify-between'>
         <div className='flex flex-col items-center'>
+          {/* Contact Page */}
           <Link to='/'>
-            <div className='bg-purple-800 text-white p-3 rounded-lg inline-block'>
+            <div className='bg-purple-800 text-white hover:bg-gray-200 p-3 rounded-lg inline-block'>
               <IoIosContacts size={20} />
             </div>
             Contact
@@ -27,21 +28,8 @@ interface SidebarProps {
             </div>
             Graphs
           </Link>
-          {/* <Link to='/customers'>
-            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <RxPerson size={20} />
-            </div>
-          </Link> */}
-          {/* <Link to='/orders'>
-            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <HiOutlineShoppingBag size={20} />
-            </div>
-          </Link> */}
-          {/* <Link to='/'>
-            <div className='bg-gray-100 hover:bg-gray-200 cursor-pointer my-4 p-3 rounded-lg inline-block'>
-              <FiSettings size={20} />
-            </div>
-          </Link> */}
+         
+              
         </div>
       </div>
       <main className='ml-20 w-full'>{children}</main>

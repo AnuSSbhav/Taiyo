@@ -1,7 +1,7 @@
 import React from 'react'
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import Loader from './loader';
+import Loader from '../loader';
 const WorldCard = () => {
 
     
@@ -22,7 +22,7 @@ const WorldCard = () => {
 console.log(data)
 
   return (
-    <div className="bg-white mx-auto shadow-md xs:w-2/3  md:w-1/2 rounded px-8 pt-6 pb-8 my-4">
+    <div className="bg-white md:mx-auto shadow-md xs:w-2/3 xs:mx-2  md:w-1/3 rounded px-8 pt-6 pb-8 my-4">
     <h2 className="mb-4 text-gray-700 text-xl font-bold text-center">World Wide Data</h2>
     <div className="mb-4">
       {Object.entries(data).map(([key, value]) => (

@@ -17,7 +17,7 @@ setid(item)
 setopen(true)
     }
   return (
-    <div className="flex flex-col  ">
+    <div className="flex flex-col bg-gradient-to-b from-blue-900 via-purple-400 to-blue-400 h-screen overflow-hidden"  >
     <button  className="mx-auto my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => {setopen(true)}}>
       Create Contact
     </button>
@@ -26,9 +26,9 @@ setopen(true)
         <ContactForm item={id}/>
       </div>
     </Modal>
-    <div className="flex flex-wrap m-4">
+    <div className="flex flex-wrap md:m-4 xs:m-auto ">
   {count.length === 0 ? (
-    <h1 className='flex justify-center  w-full h-screen text-center'>No Data</h1>
+    <h1 className='flex justify-center font-extrabold text-4xl text-gray-300  w-full h-screen text-center'>No Data</h1>
   ) : (
     count.map(item => <Card key={item.id} item={item} openEdit={openEdit} />) // Don't forget to add a key prop to Card when mapping
   )}

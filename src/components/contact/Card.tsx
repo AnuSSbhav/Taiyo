@@ -19,8 +19,8 @@ const Card: FC<CardProps> = ({ item, openEdit }) => {
   };
 
   return (
-    <div className="xl:w-1/3 md:w-3/5 w-1/2 p-4">
-      <div className="border border-gray-200 p-6 rounded-lg">
+    <div className="xl:w-1/3 md:w-3/5 w-full p-4">
+      <div className="border bg-white/75  shadow-gray-500 shadow-lg p-6 rounded-lg">
         <div className="flex justify-between mb-2">
           <div className="flex flex-wrap">
             <h2 className="text-lg text-gray-900 font-medium title-font mb-2">

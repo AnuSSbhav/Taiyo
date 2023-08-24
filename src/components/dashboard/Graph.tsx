@@ -11,9 +11,7 @@ import {
 } from 'recharts';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import Mapped from './Mapped';
-import WorldCard from './WorldCard';
-import Loader from './loader';
+import Loader from '../loader';
 
 const Graph = () => {
   const [index, setIndex] = useState(0);

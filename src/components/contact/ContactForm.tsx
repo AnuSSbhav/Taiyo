@@ -59,7 +59,7 @@ const ContactForm:FC<CardProps> = ({item}) => {
     
       setFormValues(updatedValues);
     };
-    //console.log(!(formValues?.firstName.length!==0 && formValues.lastName.length!==0 && formValues.status!=''),formValues.firstName,formValues.lastName,formValues.status)
+   // console.log((formValues?.firstName.length===0 ),( formValues.lastName.length===0),( formValues.status===''),formValues.firstName,formValues.lastName,formValues.status)
 
   return (
     <div className="w-full max-w-xs">
@@ -112,7 +112,7 @@ const ContactForm:FC<CardProps> = ({item}) => {
 </div>
       <div className="mx-auto">
         <button type='submit' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
-        disabled={(formValues?.firstName.length===0 && formValues.lastName.length===0 && formValues.status==='')}>
+        disabled={(formValues?.firstName.length===0 || formValues.lastName.length===0 || formValues.status.length===0)}>
           Save
         </button>
         

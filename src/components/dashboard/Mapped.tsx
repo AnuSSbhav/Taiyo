@@ -4,7 +4,7 @@ import axios from 'axios';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import Loader from './loader';
+import Loader from '../loader';
 const Mapped = () => {
 
     const customIcon = L.icon({
